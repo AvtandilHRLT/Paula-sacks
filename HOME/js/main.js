@@ -2,8 +2,8 @@ $(document).ready(function() {
 
     // BURGER
 
-    $('.header__navbar').click(function(event) {
-        $('.header__navbar, .navmenu>ul').toggleClass('active');
+    $('.burger').click(function(event) {
+        $('.burger, .navmenu>ul').toggleClass('active');
         $('body').toggleClass('lock');
 
     })

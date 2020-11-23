@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paula Sacks</title>
+    <link rel="stylesheet" href="css/submenu.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -29,17 +30,38 @@
                             <span></span>
                         </div>
                     </div>
-                    <ul>
-                        <li><a href="#">Books</a></li>
-                        <li><a href="#">Podcast</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#" class="btn__feedback">Get The Books Now</a></li>
+                    <ul class="menu__list">
+                        <li>
+                            <a class="menu__link" href="#">Books</a>
+                            <span class="arrow-vniz arrow"></span>
+                            <ul class="sub-menu__list">
+                                <li>
+                                    <a class="sub-menu__link" href="#">All books</a>
+                                    <span class="arrow-next arrow"></span>
+                                    <ul class="sub-sub-menu__list">
+                                        <li class="sub-sub-menu__link">
+                                            <img src="home_img/sub-sub-menu__link1.png" alt="sub-sub-menu__link1.png">
+                                            <p>Love Rays for Adults</p>
+                                        </li>
+                                        <li class="sub-sub-menu__link">
+                                            <img src="home_img/sub-sub-menu__link2.png" alt="sub-sub-menu__link2.png">
+                                            <p>Love Rays for Children</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="menu__link" href="#">Podcast</a></li>
+                        <li><a class="menu__link" href="#">Contact</a></li>
+                        <li><a class="menu__link btn__feedback" href="#" >Get The Books Now</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
     <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/menu.js"></script>
     <script src="js/main.js"></script>
+    
 </body>
 </html>
