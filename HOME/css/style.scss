@@ -307,7 +307,7 @@ body.mouse .sub-menu__list>li:first-child:hover .arrow-next{
     position: absolute;
     top: 0px;
     left: 80px;
-    width: 280px;
+    width: 300px;
     @media (max-width: 768px){
         position: static;
         left: 0;
@@ -392,7 +392,11 @@ body.touch .arrow-next.active_submenu  {
 }
 // конец сплывающего меню
 
-////////////////////END HEADER
-//////////////////////////////
+////////////////END HEADER
+//////////////////////////
 
+////////////////////FOOTER
+//////////////////////////
 
+////////////////END FOOTER
+//////////////////////////

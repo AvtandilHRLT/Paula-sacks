@@ -321,7 +321,7 @@ body.mouse .sub-menu__list > li:first-child:hover .arrow-next {
   position: absolute;
   top: 0px;
   left: 80px;
-  width: 280px;
+  width: 300px;
 }
 @media (max-width: 768px) {
   .sub-sub-menu__list {
