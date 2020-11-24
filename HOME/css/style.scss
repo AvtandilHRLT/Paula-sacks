@@ -180,7 +180,18 @@
     }
 
 }
+
 // сплывающее меню
+li#accard.active_accard,
+li#accard.active_accard1{
+    padding: 20px 0 0 0;
+}
+li#accard.active_accard1{
+    .sub-menu__list>li{
+        padding: 25px 0 0 0;
+    }
+}
+
 .sub-menu li{
     position: relative;
 }
@@ -214,11 +225,9 @@
     @media (max-width: 768px){
         margin: 0;
         width: 100%;
-        padding: 25px 0;
+        padding: 25px 0 25px 0;
         background-color: #fff;
         border-bottom: none;
-        
-        
     }
 }
 .sub-menu__link{
