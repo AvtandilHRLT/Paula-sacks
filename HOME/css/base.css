@@ -27,6 +27,7 @@ p {
     font-size: 16px;
     line-height: 20px;
     color: #303C4D;
+    text-decoration: none;
 }
 .container{
     max-width: 1440px;
@@ -35,7 +36,9 @@ p {
 div{
     /* border: 1px solid red; */
 }
-
+ul{
+    padding-inline-start: 0px;
+}
 @font-face {
     font-family: Ogg;
     src: url("../font/Ogg-Roman.otf") format("opentype");
