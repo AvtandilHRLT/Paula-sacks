@@ -213,7 +213,7 @@
 
 .sub-menu__link {
   color: #fff;
-  margin-left: 20px;
+  margin-left: 5px;
 }
 @media (max-width: 768px) {
   .sub-menu__link {
@@ -221,12 +221,13 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
+    margin-left: 20px;
   }
 }
 
 .arrow-next {
   position: absolute;
-  right: 20px;
+  right: 10px;
   top: 27px;
   transform: translateY(-50%) rotate(135deg);
   width: 5px;
@@ -252,7 +253,7 @@
 .arrow-vniz {
   position: absolute;
   right: -21px;
-  top: 25px;
+  top: 9px;
   transform: translateY(-50%) rotate(45deg);
   width: 6px;
   height: 6px;
@@ -263,7 +264,7 @@
 }
 @media (max-width: 991px) {
   .arrow-vniz {
-    right: -41px;
+    right: -21px;
   }
 }
 @media (max-width: 820px) {
@@ -298,8 +299,8 @@ body.mouse .sub-menu__list > li:first-child:hover .arrow-next {
   display: none;
   position: absolute;
   top: 20px;
-  left: 100%;
-  width: 300px;
+  left: 80px;
+  width: 280px;
 }
 @media (max-width: 768px) {
   .sub-sub-menu__list {
