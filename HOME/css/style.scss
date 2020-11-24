@@ -185,6 +185,7 @@
 li#accard.active_accard,
 li#accard.active_accard1{
     padding: 20px 0 0 0;
+    background: #6AACEF;
 }
 li#accard.active_accard1{
     .sub-menu__list>li{
@@ -374,15 +375,17 @@ body.touch .active_submenu .sub-sub-menu__list{
 }
 body.touch .sub-menu__list.open{
     display: block;
+    transition: .5s;
 }
 body.touch .sub-sub-menu__list.open{
     display: block;
+    transition: 0.9s ease;
 }
-.active_submenu.arrow{
-    transform: rotate(-45deg);
+body.touch .arrow-vniz.active_submenu{
+    transform: rotate(-135deg);
     transition: .5s;
 }
-.active_submenu.arrow{
+body.touch .arrow-next.active_submenu  {
     transform: rotate(-135deg);
     top: 25px;
     transition: .5s; 
