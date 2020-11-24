@@ -194,7 +194,8 @@
 .sub-menu__list>li{
     position: relative;
     background-color:#303C4D;
-    padding: 20px 0px 20px 0px;
+    padding: 28.5px 0px 28.5px 0px;
+    border-bottom: 2px solid #232B36;
     &:hover{
         opacity: 0.9;
     }
@@ -203,6 +204,7 @@
         width: 100%;
         padding: 25px 0;
         background-color: #fff;
+        border-bottom: none;
         
         
     }
@@ -222,7 +224,7 @@
 .arrow-next{
     position: absolute;
     right: 10px;
-    top: 27px;
+    top: 37.5px;
     transform: translateY(-50%) rotate(135deg);
     width: 5px;
     height: 5px;
@@ -281,7 +283,7 @@ body.mouse .sub-menu__list>li:first-child:hover .arrow-next{
 .sub-sub-menu__list{
     display: none;
     position: absolute;
-    top: 20px;
+    top: 0px;
     left: 80px;
     width: 280px;
     @media (max-width: 768px){
