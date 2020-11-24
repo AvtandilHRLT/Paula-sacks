@@ -3,7 +3,7 @@ $(document).ready(function() {
     // BURGER
 
     $('.burger').click(function(event) {
-        $('.burger, .navmenu>ul').toggleClass('active');
+        $('.burger , .navmenu>ul').toggleClass('active');
         $('body').toggleClass('lock');
 
     })
@@ -11,9 +11,7 @@ $(document).ready(function() {
     $('.burger__main-menu>ul>li>a').click(function (event) {
         $('.burger-icon, .burger').toggleClass('active');
         $('body').toggleClass('lock');
-        
-
-    	
+	
     })
     //END BURGER
 
