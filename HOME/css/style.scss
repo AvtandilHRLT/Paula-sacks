@@ -194,7 +194,7 @@
 .sub-menu__list>li{
     position: relative;
     background-color:#303C4D;
-    padding: 28.5px 0px 28.5px 0px;
+    padding: 20px 0px 20px 0px;
     border-bottom: 2px solid #232B36;
     &:hover{
         opacity: 0.9;
@@ -224,7 +224,7 @@
 .arrow-next{
     position: absolute;
     right: 10px;
-    top: 37.5px;
+    top: 29px;
     transform: translateY(-50%) rotate(135deg);
     width: 5px;
     height: 5px;
@@ -300,6 +300,7 @@ body.mouse .sub-menu__list>li:first-child:hover .arrow-next{
     border-bottom: 2px solid #232B36;
     background-color: #303C4D;
     display: flex;
+    align-items: center;
     padding: 10px 0;
     @media(max-width:768px){   
         background-color: white;
@@ -314,19 +315,19 @@ body.mouse .sub-menu__list>li:first-child:hover .arrow-next{
     &:hover{
         opacity: 0.9;
     }
-    p{
+    a{
         color: white;
         margin-left: 20px;
+        img{
+            margin-left: 10px;
+            width: 48px;
+            height: 57px; 
+        }
         @media(max-width: 768px){
             font-size: 14px;
             line-height: 150.5%;
             color: #303C4D;
         }
-    }
-    img{
-        margin-left: 10px;
-        width: 48px;
-        height: 57px; 
     }
 }
 
@@ -345,8 +346,7 @@ body.touch .active_submenu .sub-menu__list{
     }
 }
 body.touch .active_submenu .sub-sub-menu__list{
-    display: block;
-     
+    display: block;     
 }
 
 .menu a.parent{
@@ -358,11 +358,11 @@ body.touch .sub-menu__list.open{
 body.touch .sub-sub-menu__list.open{
     display: block;
 }
-.active_submenu.arrow-next{
+.active_submenu.arrow{
     transform: rotate(-45deg);
     transition: .5s;
 }
-.active_submenu.arrow-vniz{
+.active_submenu.arrow{
     transform: rotate(-135deg);
     top: 25px;
     transition: .5s; 
