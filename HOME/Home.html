@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <!-- ШАПКА -->
+    <!-- HEADER -->
     <header id="start" class="header">
         <div class="header__container container">
             <div class="header__logo">
@@ -61,11 +61,39 @@
             </div>
         </div>
     </header>
-    <!-- КОНЕЦ ШАПКА -->
-    <main>
+    <!-- END HEADER -->
+    <!-- MAIN -->
+    <main class="main">
+        <div class="main__container container">
 
+            <!-- acquaintance -->
+            <div class="main__acquaintance">
+                <div class="acquaintance__items">
+                    <div class="acquaintance__item-left">
+                        <h1 class="h1__pc" >Psychotherapy, Hypnotherapy and Children’s Book Author</h1>
+                        <h1 class="h1__mobile">Psychotherapy, Hypnotherapy, Supervision</h1>
+                        <p class="p__pc">Paula Sacks is a specialist in Adult Attachment Disorders and lorem ipsum dolor set imet.</p>
+                        <p class="p__mobile">Specialist in Adult Attachment Disorders and lorem ipsum dolor.</p>
+                        <div class="acquaintance__btns">
+                            <a class="acquaintance__btn-left" href="#">Get Books</a>
+                            <a class="acquaintance__btn-right" href="#">Play Video</a>
+                        </div>
+                    </div>
+                    <div class="acquaintance__item-right">
+                        <div class="acquaintance__play-video">
+                            <img src="home_img/play__book.png" alt="book">
+                            <a class="play__video" href="#"></a>
+                            <iframe id="player__video" width="624" height="486" src="https://www.youtube.com/embed/Q6G_xlpAPdA?start=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <!-- end acquaintance -->
+
+        </div>
     </main>
-    <!-- ПОДВАЛ -->
+    <!-- END MAIN -->
+    <!-- FOOTER -->
     <footer id="contact" class="footer">
         <div class="footer__container container">
             <div class="footer__items">
@@ -145,10 +173,15 @@
             </div>
         </div>
     </footer>
-    <!-- КОНЕЦ ПОДВАЛ -->
+    <!-- END FOOTER -->
+
+
+
+
+    <!-- SCRIPTS -->
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/main.js"></script>
-    
+    <!-- END SCRIPTS -->
 </body>
 </html>

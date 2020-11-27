@@ -28,6 +28,7 @@ p {
     line-height: 20px;
     color: #303C4D;
     text-decoration: none;
+    margin: 0;
 }
 .container{
     max-width: 1440px;

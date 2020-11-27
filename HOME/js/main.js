@@ -18,7 +18,18 @@ $(document).ready(function() {
         $('body').toggleClass('lock');
 
     })
+
+    $('.play__video').click(function(event) {
+        $('.play__video , #player__video, img').toggleClass('active_video');
+        $('body').toggleClass('lock');
+
+    })
     
+    $('.acquaintance__btn-right').click(function(event) {
+        $('.play__video , #player__video, img').toggleClass('active_video');
+        $('body').toggleClass('lock');
+
+    })
 
     $('.burger__main-menu>ul>li>a').click(function (event) {
         $('.burger-icon, .burger').toggleClass('active');

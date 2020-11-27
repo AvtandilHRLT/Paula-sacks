@@ -387,10 +387,7 @@ body.touch .arrow-next.active_submenu  {
 
 ////////////////END HEADER
 //////////////////////////
-main{
-    height: 8500px;
-    background: red;
-}
+
 ////////////////////FOOTER
 //////////////////////////
 .footer{
@@ -628,3 +625,237 @@ main{
 }
 ////////////////END FOOTER
 //////////////////////////
+
+
+
+//////////////////////MAIN
+//////////////////////////
+.main{
+    background-color: #f9f0ee;
+    background-image: url(../home_img/main_phon1.png);
+    background-blend-mode: multiply;
+    .main__container{
+        >.main__acquaintance{
+            width: 100%;
+            
+            >.acquaintance__items{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 98px 0 72px 0;
+                width: 100%;
+                // border: 1px solid #000;
+                @media(max-width:991px){
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    padding: 20px 0 42px 0;
+                }
+                .acquaintance__item-left{
+                    width: 45%;
+                    padding-top: 64px;
+                    @media(max-width:1440px){
+                        padding-left: 20px;
+                    }
+                    @media(max-width:991px){
+                        width: 85%;
+                        padding-top: 20px;
+                        padding-left: 0;
+                    }
+                    @media(max-width:768px){
+                        width: 90%;
+                        
+                    }
+                    @media(max-width:480px){
+                        width: 96%;
+                    }
+
+                    >.h1__pc{
+                        margin: 0;
+                        padding-right: 40px;
+                        font-family: Ogg;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 40px;
+                        line-height: 144.5%;
+                        padding-bottom: 28px;
+                        @media(max-width:1440px){
+                            padding-right: 0;
+                        }
+                        @media(max-width:991px){
+                            padding-bottom: 20px;
+                            text-align: center;
+                        }
+                        @media(max-width:768px){
+                            display: none;
+                        }
+                    }
+                    >.h1__mobile{
+                        display: none;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 30px;
+                        line-height: 138.5%;
+                        text-align: center;
+                        font-family: Ogg;
+                        @media(max-width:768px){
+                            display: block;
+                        }
+                    }
+                    >.p__pc{
+                        padding-right: 100px;
+                        font-weight: normal;
+                        font-size: 20px;
+                        line-height: 178.9%;
+                        padding-bottom: 36px;
+                        @media(max-width:1440px){
+                            padding-right: 40px;
+                        }
+                        @media(max-width:991px){
+                            padding-right: 0;
+                            text-align: center;
+                        }
+                        @media(max-width:768px){
+                            display: none;
+                        }
+                    }
+                    >.p__mobile{
+                        line-height: 178.9%;
+                        text-align: center;
+                        display: none;
+                        @media(max-width:768px){
+                            display: block;
+                            padding: 0 20px 30px 20px;
+                        }
+                    }
+                    .acquaintance__btns{
+                        display: flex;
+                        flex-direction: row;
+                        margin: 0;
+                        @media(max-width:991px){
+                            justify-content: center;
+                        }
+                        
+                        .acquaintance__btn-left {
+                            display: block;
+                            background: #EE603B;
+                            text-align: center;
+                            color: #FFFFFF;
+                            padding: 20px 35px;
+                            border-radius: 1px;
+                            @media(max-width: 365px){
+                                padding: 20px 30px;
+                            }
+                            &:hover{
+                                opacity: 0.9;
+                            }
+                        }
+                        .acquaintance__btn-right {
+                            padding: 20px 28px 20px 58px;
+                            background: #FFF4F3;
+                            margin-left: 30px;
+                            border: 2px solid #EE603B;
+                            box-sizing: border-box;
+                            border-radius: 1px;
+                            position: relative;
+                            color: #EE603B;
+                            @media(max-width:480px){
+                                margin-left: 16px;
+                            }
+                            @media(max-width: 365px){
+                                padding: 15px 15px 15px 43px;
+                                margin-left: 10px;
+                            }
+                            &::before{
+                                content: '';
+                                position: absolute;
+                                background-image: url(../home_img/orange-next.svg);
+                                width: 9px;
+                                height: 10px;
+                                left: 28px;
+                                top: 24.5px;
+                                @media(max-width: 365px){
+                                    left: 15px;
+                                    top: 19.5px;
+                                }
+                            }
+                        }
+                    }
+                }
+                >.acquaintance__item-right{
+                    width: 45%;
+                    @media(max-width:991px){
+                        width: 85%;
+                    }
+                    @media(max-width:768px){
+                        width: 90%;
+                    }
+                    @media(max-width: 480px){
+                        width: 80%;
+                    }
+                    >.acquaintance__play-video{     
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        >iframe{
+                            width: 100%;
+                            height: 486px;
+                            border: none;
+                            display: none;
+                            border-radius: 25px;
+                            @media(max-width: 767px){
+                                border-radius: 35px;
+                            }
+                            @media(max-width: 480px){
+                                height: 150%;
+                                border-radius: 35px;
+                            }
+                            &.active_video{
+                                display: block;
+                            }
+                        } 
+                        img{
+                            &.active_video{
+                                display: none;
+                            }
+                            object-fit: cover;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        >.play__video{
+                            position: absolute;
+                            width: 94px;
+                            height: 94px;
+                            top: 40%;
+                            left: 40%;
+                            display: block;
+                            background-image: url(../home_img/play.svg);
+                            @media(max-width: 768px){
+                                width: 60px; 
+                                height: 60px;
+                                top: 37%;
+                                left: 43%;
+                                background-image: url(../home_img/play__video1.svg);
+
+                            }
+                            &.active_video{
+                                display: none;
+                            }
+                        }
+                        
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+//////////////////END MAIN
+//////////////////////////
+
+
+
+
+
+
+
