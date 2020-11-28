@@ -19,6 +19,9 @@ $(document).ready(function() {
 
     })
 
+
+    // play video //
+
     $('.play__video').click(function(event) {
         $('.play__video , #player__video, img').toggleClass('active_video');
         $('body').toggleClass('lock');
@@ -31,6 +34,21 @@ $(document).ready(function() {
 
     })
 
+
+    $('.play__video1').click(function(event) {
+        $('.play__video , #player__video1, img').toggleClass('active_video1');
+        $('body').toggleClass('lock');
+
+    })
+    
+    $('.acquaintance__btn-right').click(function(event) {
+        $('.play__video , #player__video1, img').toggleClass('active_video1');
+        $('body').toggleClass('lock');
+
+    })
+
+
+    // end play video //
     $('.burger__main-menu>ul>li>a').click(function (event) {
         $('.burger-icon, .burger').toggleClass('active');
         $('body').toggleClass('lock');
@@ -57,8 +75,5 @@ $(document).ready(function() {
         $('.desc3').stop().slideToggle('slov');
         $('.accardeon__content').toggleClass('active__accardeon3');
         $('.accardeon__btn3').toggleClass('color-blue');
-
-
-
     })
 })
