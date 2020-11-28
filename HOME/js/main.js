@@ -38,4 +38,27 @@ $(document).ready(function() {
     })
     //END BURGER
 
+    $('.accardeon__btn1').click(function() {
+        $('.desc1').stop().slideToggle('slov');
+        $('.accardeon__content').toggleClass('active__accardeon1');
+        $('.accardeon__btn1').toggleClass('color-blue');
+
+
+    })
+     $('.accardeon__btn2').click(function() {
+        $('.desc2').stop().slideToggle('slov');
+        $('.accardeon__content').toggleClass('active__accardeon2');
+        $('.accardeon__btn2').toggleClass('color-blue');
+
+
+
+    })
+      $('.accardeon__btn3').click(function() {
+        $('.desc3').stop().slideToggle('slov');
+        $('.accardeon__content').toggleClass('active__accardeon3');
+        $('.accardeon__btn3').toggleClass('color-blue');
+
+
+
+    })
 })

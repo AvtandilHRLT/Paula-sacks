@@ -20,6 +20,7 @@ h3,
 span,
 button,
 div,
+li,
 p {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -34,9 +35,7 @@ p {
     max-width: 1440px;
     margin: 0 auto;
 }
-div{
-    /* border: 1px solid red; */
-}
+
 ul{
     padding-inline-start: 0px;
 }
@@ -44,3 +43,49 @@ ul{
     font-family: Ogg;
     src: url("../font/Ogg-Roman.otf") format("opentype");
     }
+@font-face {
+    font-family: Oggr;
+    src: url("../font/Ogg-Italic.otf") format("opentype");
+    }
+
+h1{
+    font-family: Ogg;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 144.5%;
+}
+h2{
+    margin: 0;
+    font-family: Ogg;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 62px;
+    
+}
+h3{
+    font-family: Ogg;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 150%;
+    color: #303C4D;
+}
+@media(max-width:768px){
+    h3{
+        font-size: 30px;
+    }
+}
+h1,h2,h3{
+    margin: 0;
+}
+h6{
+    margin: 0;
+    font-family: Ogg;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 31px;
+    color: #EE603B;
+}
